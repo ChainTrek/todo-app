@@ -1,12 +1,19 @@
 import React, { useState } from 'react'
 
-const AddTodo = () => {
+const AddTodo = ({ addTask }) => {
+	const [task, setTask] = useState('')
+
+	const handleAddTask = () => {
+		if (task.trim()) {
+			addTask(task.trim())
+			setTask('')
+		}
+	}
+
 	return (
 		<div>
-			<form>
-				<input type='text' placeholder='Add Todo' />
-				<button>Add Todo</button>
-			</form>
+			<input type='text' value={task} onChange={(e) => setTask(e.target.value)} placeholder='Add Todo' />
+			<button onClick={handleAddTask}>Add Todo</button>
 		</div>
 	)
 }
