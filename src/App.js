@@ -27,12 +27,12 @@ function App() {
 	}
 
 	return (
-		<>
+		<div className='todo-app'>
 			<Header title='Todo App' />
 			<AddTodo addTask={addTask} />
 			<TodoList tasks={tasks} deleteTask={deleteTask} editTask={editTask} />
 			<Footer text='© 2024 Elijah W. Cravens' />
-		</>
+		</div>
 	)
 }
 

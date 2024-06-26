@@ -16,23 +16,23 @@ const TodoItem = ({ task, index, deleteTask, editTask }) => {
 	}
 
 	return (
-		<li>
+		<li className='todo-item'>
 			{isEditing ? (
-        <>
-          <input type='text' value={editValue} onChange={e => setEditValue(e.target.value)} />
-          <button onClick={handleSave}>Save</button>
-        </>
-      ) : (
-        <>
-          {task}
-          <button onClick={handleEdit}>
-            <FontAwesomeIcon icon={faEdit} />
-          </button>
-          <button onClick={() => deleteTask(index)}>
-            <FontAwesomeIcon icon={faTrash} />
-          </button>
-        </>
-      )}
+				<>
+					<input type='text' value={editValue} onChange={e => setEditValue(e.target.value)} />
+					<button onClick={handleSave}>Save</button>
+				</>
+			) : (
+				<>
+					{task}
+					<button onClick={handleEdit}>
+						<FontAwesomeIcon icon={faEdit} />
+					</button>
+					<button onClick={() => deleteTask(index)}>
+						<FontAwesomeIcon icon={faTrash} />
+					</button>
+				</>
+			)}
 		</li>
 	)
 }

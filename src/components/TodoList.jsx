@@ -3,7 +3,7 @@ import TodoItem from './TodoItem'
 
 const TodoList = ({ tasks, deleteTask, editTask }) => {
 	return (
-		<ul>
+		<ul className='todo-list'>
 			{tasks.map((task, index) => (
 				<TodoItem key={index} task={task} deleteTask={deleteTask} editTask={editTask} index={index} />
 			))}

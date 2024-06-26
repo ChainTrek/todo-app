@@ -11,7 +11,7 @@ const AddTodo = ({ addTask }) => {
 	}
 
 	return (
-		<div>
+		<div className='todo-input'>
 			<input type='text' value={task} onChange={(e) => setTask(e.target.value)} placeholder='Add Todo' />
 			<button onClick={handleAddTask}>Add Todo</button>
 		</div>

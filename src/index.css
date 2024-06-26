@@ -29,3 +29,78 @@ body {
 	background-color: var(--Charcoal);
 	color: var(--Cream);
 }
+
+.todo-app {
+  text-align: center;
+  padding: 20px;
+}
+
+.header, .footer {
+  background-color: var(--RichBlue);
+  padding: 20px;
+  color: var(--White);
+}
+
+.todo-input {
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--Cyan);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.todo-input button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: var(--MintGreen);
+  border: none;
+  border-radius: 5px;
+  color: var(--White);
+  cursor: pointer;
+}
+
+.todo-input button:hover {
+  background-color: var(--LightMint);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--MidnightBlue);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: var(--White);
+}
+
+.todo-item input {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid var(--Cyan);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.todo-item button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: var(--RedOrange);
+  border: none;
+  border-radius: 5px;
+  color: var(--White);
+  cursor: pointer;
+}
+
+.todo-item button:hover {
+  background-color: var(--Cyan);
+}
